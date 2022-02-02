@@ -1,0 +1,369 @@
+/* import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* common style list  */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;}
+.container{
+    width: 1144px;
+    margin: 0 auto;
+}
+
+
+/* -------------------
+---- header start -------
+----------------------  */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+}
+.nav-toggle{
+    display: none;
+}
+.nav-toggle a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3A3A3A;    
+}
+.nav .nav-brand a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3A3A3A;}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+    margin-left: 34px;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+
+/* banner  */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+}
+.left-side {
+    flex: 1;
+}
+.left-side-heading{
+    font-size: 52px;
+    color: #3A3A3A;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.typing-effect{
+    position: relative;
+    color: transparent;
+}
+.typing-effect::before{
+    content: 'Influencer';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #3A3A3A;
+    animation: typing 2.5s infinite;
+}
+.left-side-paragraph{
+    font-size: 16px;
+    color: #3A3A3A;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.right-side{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-side img{
+    width: 80%;
+    transition: .5s;
+}
+.right-side:hover img{
+    transform: scale(1.1);
+}
+.common-btn{
+    font-size: 16px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #E02C6D;
+    transition: .5s;
+}
+.common-btn i{
+    margin-left: 8px;
+}
+.common-btn:hover{
+    border: 2px solid #E02C6D;
+    background-color: transparent;
+    color: #E02C6D;
+}
+
+@keyframes typing{
+    0%{
+        content: 'I|';
+    }
+    7%{
+        content: 'In|';
+    }
+    14%{
+        content: 'Inf|';
+    }
+    21%{
+        content: 'Infl|';
+    }
+    28%{
+        content: 'Influ|';
+    }
+    35%{
+        content: 'Influe|';
+    }
+    42%{
+        content: 'Influen|';
+    }
+    49%{
+        content: 'Influenc|';
+    }
+    56%{
+        content: 'Influence|';
+    }
+    63%{
+        content: 'Influencer|';
+    }
+    63%{
+        content: 'Influencer';
+    }
+    63% ,
+    85%{
+        content: 'Influencer|';
+    }
+    86%{
+        content: 'Influencer|';
+    }
+    87%{
+        content: 'Influence|';
+    }
+    88%{
+        content: 'Influenc|';
+    }
+    89%{
+        content: 'Influen|';
+    }
+    90%{
+        content: 'Influe|';
+    }
+    92%{
+        content: 'Influ|';
+    }
+    93%{
+        content: 'Infl||';
+    }
+    94%{
+        content: 'Inf|';
+    }
+    95%{
+        content: 'In|';
+    }
+    96%{
+        content: 'I|';
+    }
+    100%{
+        content: '|';
+    }
+}
+
+
+/* collection part */
+
+.popular-collection{
+    margin: 50px auto;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+.collection-heading{
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.collection-items{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 17px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+.collection-items img{
+    width: 100%;
+}
+.items-heading h2{
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.items-heading h3{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 14px;
+}
+.rating{
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.rating-icon i{
+    color: orange;
+}
+.rating-point{
+    color: #5E6366;
+    margin-left: 8px;
+}
+.item-details{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 143%;
+
+}
+.see-more{
+    width: 90%;
+    text-align: right;
+    margin: 20px auto;
+}
+.see-more a{
+    color: #E02C6DDE;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.see-more i{
+    margin-left: 5px;
+}
+
+
+/* contact part  */
+.contact {
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    grid-gap: 50px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.vertical-line{
+    width: 2px;
+    height: 100%;
+    background: #3A3A3A;
+}
+.contact h2{
+    font-size: 50px;
+    color: #3A3A3A;
+    margin-bottom: 20px;
+}
+.news-letter-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.news-letter-box label{
+    font-size: 20px;
+    color: #3A3A3A;
+    margin-bottom: 5px;
+}
+.news-letter-box input{
+    width: 70%;
+    height: 2em;
+    outline: none;
+    border: 1px solid #E02C6D;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.news-letter button{
+    padding: 10px 20px;
+}
+
+.address{
+    margin-bottom: 20px;
+}
+.address h3 , .phone h3 {
+    color: #3A3A3A;
+    margin-bottom: 5px;
+}
+.address p , .phone p{
+    color: #3A3A3A;
+}
+
+/* footer part */
+
+.footer{
+    height: 220px;
+    background: #0A0826;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+.footer p{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 3px;
+    color: #D9DBE1;
+}
+.social-icon{
+    margin-top: 15px;
+}
+.social-icon i{
+    font-size: 16px;
+    color: #fff;
+    margin: 0 12px;
+}
+
